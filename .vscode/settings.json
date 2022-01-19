@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        ""
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/nils/Programmering/Database/mysql-connector-java-8.0.24/mysql-connector-java-8.0.24.jar"
+    ],
+    "liveshare.allowGuestDebugControl": true,
+    "liveshare.allowGuestTaskControl": true
+}

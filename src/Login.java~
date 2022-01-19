@@ -1,0 +1,53 @@
+//package frontend.src;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+//import backend.Character;
+
+public class LoginScreen {
+
+    private JFrame window;
+    private JPanel passwordTextPanel, loginPanel, userNameTextPanel;
+    //private JLabel usernameText, passwordText;
+    // private JButton loginButton;
+    //private JTextField usernameField;
+    //private JPasswordField passwordField;
+    //  private JLabel welcomeText;
+
+
+
+    //    private Character character;
+
+    private int windowWidth = 400, windowHeight = 400;
+
+    public Login() {
+        createLoginUI();
+    }
+
+    private void createLoginUI() {
+        window = new JFrame("Project Evo");
+        window.setSize(windowWidth, windowHeight);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // window.getContentPane().setBackground(Color.cyan);
+        window.setLayout(null);
+
+        centerWindow(window);
+	//
+	ImageIcon background_image = new ImageIcon("background.jpg");
+	Image img = background_image.getImage();
+	Image temp_img = img.getScaledInstance(this.windowWidth, this.windowHeight,Image.SCALE_SMOOTH);
+	background_image = new ImageIcon(temp_img);
+	JLabel background = new JLabel("", background_image, JLabel.CENTER);
+	background.setBounds(0, 0, this.windowWidth, this.windowHeight);
+	this.window.add(background);
+
+	setVisible(true);
+    }
+
+    public static void main(String[] args) {
+
+        new Login();
+    }
+}
